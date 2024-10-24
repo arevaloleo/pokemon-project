@@ -1,4 +1,3 @@
-# src/services/mediador_service.py
 from .openMeteo_service import OpenMeteoService
 from .pokemon_service import PokemonService
 

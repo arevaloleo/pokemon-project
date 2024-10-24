@@ -1,4 +1,3 @@
-# controllers/pokemon_controller.py
 from flask import Blueprint, jsonify, request
 from ..services.pokemon_service import PokemonService
 from ..services.middleware_service import MiddlewareService

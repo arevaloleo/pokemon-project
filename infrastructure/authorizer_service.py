@@ -1,13 +1,9 @@
 import requests
 import os
 
-# URL del servicio del authorizer que valida el token
-AUTHORIZER_URL = os.getenv("AUTHORIZER_URL", "https://tu-servicio-authorizer.com/validate-token")
+AUTHORIZER_URL = os.getenv("AUTHORIZER_URL")
 
 def verify_token(token):
-    """
-    Llama al servicio de authorizer para validar el token.
-    """
     try:
         response = requests.post(AUTHORIZER_URL, json={"token": token})
         
